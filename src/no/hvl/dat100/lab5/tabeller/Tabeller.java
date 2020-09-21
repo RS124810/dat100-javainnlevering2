@@ -5,8 +5,6 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 		
-		// TODO
-		//throw new UnsupportedOperationException("skrivUt ikke implementert");
 		for (int i=0; i <tabell.length; i++) {
 			
 			System.out.print(tabell [i] +(" "));	
@@ -17,16 +15,14 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 		String tab= "[";
 			
 		for (int i=0; i <tabell.length; i++) {
 			if (i < tabell.length-1) {
 				tab += tabell[i]+",";
-			}else {
+			}else{
 				tab += tabell[i];
-			}
+				}
 					
 		}
 		tab +="]";
@@ -35,24 +31,56 @@ public class Tabeller {
 
 	// c)
 	public static int summer(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		
+	// For-løkke
+		int summer=0;
+		
+		for (int i=0;i<tabell.length;i++) {
+			summer +=tabell[i];
+		}
+		return summer;
 	}
-
+	// While-løkke
+		//		int sum =0;
+		//		int i =0;
+		//		while ( i < tabell.length ) {
+		//			sum +=tabell[i];
+		//			i++;
+		//		}
+	
+	// Utvidet for-løkke
+		//		int sum =0;
+		//		for (int i: tabell) {
+		//			sum +=i;
+		//		}
+	
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		boolean svar = false;
+		for (int i: tabell) {
+			if (i == tall) {
+				svar = true;
+				return svar;
+			}else{
+				svar = false;					
+				}
+		}
+		return svar;
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
-
+		
+		int x=0;
+		for (int i: tabell) {
+			if (i == tall) {
+				return x;
+			}else{
+				x++;
+				}
+		}
+		return x=-1;
 	}
 
 	// f)
