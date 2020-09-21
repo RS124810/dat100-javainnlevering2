@@ -18,8 +18,19 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 
 		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		//throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String tab= "[";
+			
+		for (int i=0; i <tabell.length; i++) {
+			if (i < tabell.length-1) {
+				tab += tabell[i]+",";
+			}else {
+				tab += tabell[i];
+			}
+					
+		}
+		tab +="]";
+		return tab;
 	}
 
 	// c)
