@@ -4,7 +4,7 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-
+		// Git test
 		// TODO
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
 
