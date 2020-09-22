@@ -126,7 +126,6 @@ public class Tabeller {
 			tab[tabell1.length+j]= tabell2 [j];
 		}
 		return tab;
-		// TODO
-		//throw new UnsupportedOperationException("settSammen ikke implementert");
+		
 	}
 }
