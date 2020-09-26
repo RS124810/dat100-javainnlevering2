@@ -1,4 +1,9 @@
 package no.hvl.dat100.lab5.tabeller;
+// Oppgavene er løst av Gruppe 44
+
+// Runar Straume
+// Sanjith Shanmugarajah
+// Sindre Johan Rørlien
 
 public class Tabeller {
 
